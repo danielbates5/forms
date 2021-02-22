@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Forms Demo</title>
+</head>
+
+<body>
+	<h1>Forms Demo</h1>
+	
+	<form action="/tacos">
+			<button type="button">PLEASE DO NOT SUBMIT THE FORM</button>
+		<p><label for="username">enter a username:</label>
+		<imput id="username" type="text" placeholder="username" name="username">
+		</p>
+		
+		<p><label for="password">enter a pasword:</label>
+		<imput id="password" type="password" placeholder="password" name="password">
+		</p>
+			<button>IN THE MIDDLE</button>
+		<p><label for="color">enter a color:</label>
+		<imput id="color" type="color" name="color">
+		</p>
+		
+		<p><label for="number">enter a number:</label>
+		<imput id="number" type="number" placeholder="enter a number" name="number">
+		</p>
+			<button type="button">Regular button (won't submit)</button>
+			<button>submit</button>
+			<imput type="submit" value="Click Me!">
+	</form>
+	<hr>
+		<button>not inside form</button>
+		
+		<h3>search reddit</h3>
+		<form action="https:www.reddit.com/search">
+			<imput type="text" name="q">
+			<button>search reddit</button>	
+		</form>
+		
+		<h3>search google</h3>
+		<form action="https://www.google.com/search">
+			<imput type="test" name="q">
+			<button>search google</button>
+		</form>
+			
+		<h3>search youtube</h3>
+		<form action="https://www.youtube.com/results">
+			<imput type="text" name="search_query">	
+			<button>search youtube</button>
+		</form>
+			<h2>more imputs</h2>
+		<form action="/birds">
+			<imput type="checkbox" name="agree_tos" id="agree">
+			<label for="agree">I Agree To Everything</label>
+				<button>birds</button>
+			<p>
+				<label for="xs">xs:</label>
+				<imput type="radio" name="size" id="xs" value+"xs">
+				<label for="s">s:</label>
+				<imput type="radio" name="size" id="s" value="s">
+				<label for="m">m:</label>
+				<imput type="radio" name="size" id="m" value="m">
+			</p>
+			<p>
+				<label for="meal">please select an Entree</label>		
+				<select name="meal" id="meal"></select>
+					<option value="fish"></option>
+					<option value="veg">vegitarian</option>
+					<option value=""></option>
+			</p>
+		</form>
+			
+		
+</body>
+</html>
