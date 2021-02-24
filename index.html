@@ -1,4 +1,4 @@
-<<!doctype html>
+<!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -23,7 +23,7 @@
 		</p>
 		
 		<p><label for="number">enter a number:</label>
-		<input id="number" type="number" placeholder="enter a number" name="number">
+		<input id="number" type="number" placeholder="enter a number" name="number" min="1" max="1000" step="2">
 		</p>
 			<button type="button">Regular button (won't submit)</button>
 			<button>submit</button>
@@ -64,12 +64,23 @@
 			</p>
 			<p>
 				<label for="meal">please select an Entree</label>		
-				<select name="meal" id="meal"></select>
+				<select name="meal" id="meal">
 					<option value="fish">fish</option>
 					<option value="veg">vegitarian</option>
 					<option value="turkey">turkey</option>
+				</select>
 			</p>
+			<p>
+				<label for="cheese">amount of cheese:</label>
+				<input type="range" id="cheese" min="1" max="100" value="75" step="7" name="cheese_level">
+			</p>
+			
 		</form>
+	<p>
+	
+		<label for="requests"> Any special requests?</label>
+		<textarea name="requests?" id="requests" cols="40" rows="10"></textarea>
+	</p>
 			
 		
 </body>
